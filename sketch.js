@@ -15,7 +15,7 @@ function preload(){
 }
 
 function setup() {
-  bg = loadImage('assets/bg.jpg');
+  // bg = loadImage('assets/bg.jpg');
   createCanvas(windowWidth, windowHeight);
   mySong.loop();
   x = width/2-230;
@@ -30,7 +30,8 @@ function setup() {
 }
 
 function draw() {
-  background(bg);
+  // background(bg);
+  background(0);
 
   textFont(birch);
   textSize(size);
@@ -42,7 +43,7 @@ function draw() {
      cursor('./assets/pause.png');
    }
 
-   
+
   for(let i = 0; i < points.length; i++){
 
     // let c = noise(i + frameCount * 0.01 ) * 255;
